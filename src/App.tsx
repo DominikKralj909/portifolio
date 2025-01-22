@@ -1,10 +1,11 @@
-function App() {
+import Portifolio from "./components/Portifolio";
 
-  return (
-    <>
-      test
-    </>
-  )
+function App() {
+	return (
+		<div className="portifolio-wrapper">
+			<Portifolio />
+		</div>
+	);
 }
 
 export default App
