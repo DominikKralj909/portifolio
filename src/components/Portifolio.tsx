@@ -1,7 +1,13 @@
+import Header from "./Header";
+
 function Portifolio() {
 	return (
 		<div className="portifolio">
-			<div className="portifolio-left">left</div>
+			<Header 
+				title="dominik kralj"
+				subtitle="frontend engineer"
+				content="I build accessible, pixel-perfect digital experiences for the web." 
+			/>
 			<div className="portifolio-right">right</div>
 		</div>
 	);

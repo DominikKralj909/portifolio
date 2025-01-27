@@ -1,0 +1,24 @@
+@use './theme' as *;
+@use './stars' as *;
+
+body {
+	background-color: $background;
+	background-image: generate-stars(100, ($text, $primary, $accent));
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+}
+
+.portifolio-wrapper {
+	display: flex;
+	height: 100%;
+	padding: 5rem; 
+}
+
+.portifolio {
+	display: flex;
+	flex: 1;
+}
+
+

@@ -1,0 +1,15 @@
+@use './theme' as *;
+
+@function generate-stars($count, $colors) {
+    $stars: ();
+    @for $i from 1 through $count {
+        $x: random(100);
+        $y: random(100);
+        $size: random(3px) + 1px;
+        $color: nth($colors, random(length($colors)));
+
+        $gradient: unquote("radial-gradient(circle #{$size} at #{$x}% #{$y}%, #{$color} 100%, transparent 100%)");
+        $stars: append($stars, $gradient, comma);
+    }
+    @return $stars;
+}
