@@ -1,3 +1,4 @@
+import Content from "./Content";
 import Header from "./Header";
 
 function Portifolio() {
@@ -8,7 +9,7 @@ function Portifolio() {
 				subtitle="frontend engineer"
 				content="I build accessible, pixel-perfect digital experiences for the web." 
 			/>
-			<div className="portifolio-right">right</div>
+			<Content />
 		</div>
 	);
 };

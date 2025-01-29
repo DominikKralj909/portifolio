@@ -8,6 +8,7 @@ body {
 	background-repeat: no-repeat;
 	height: 100vh;
 	margin: 0;
+	color: $text;
 }
 
 .portifolio-wrapper {
@@ -19,6 +20,7 @@ body {
 .portifolio {
 	display: flex;
 	flex: 1;
+	gap: 3rem;
 }
 
 

@@ -1,20 +1,29 @@
+// main.scss
+
 @use './theme' as *;
 
 .portifolio-header {
     display: flex;
     flex: 1;
     flex-direction: column;
-    color: $text;
     text-transform: capitalize;
     gap: 5rem;
 
     &-title {
-        font-size: 3rem;
+        font-size: $font-xl;
+        line-height: $line-height-heading;
     }
 
     &-subtitle {
-        font-size: 1.25rem;
+        font-size: $font-lg;
     }
+
+	 &-content-text {
+		font-size: $font-md;
+		line-height: $line-height-base;
+		color: $text;
+		margin-top: 0.5rem;
+	}
 
     &-content,
     &-navigation {
@@ -23,22 +32,23 @@
         gap: 1rem;
     }
 
-	.portifolio-header-navigation a {
-		width: max-content;
-		transition: color 0.3s ease;
+    .portifolio-header-navigation a {
+        width: max-content;
+        transition: color 0.3s ease;
+		font-size: 1.1rem;
 
-		&:hover {
-			color: $accent;
-			border-bottom: 2px solid $accent;
-		}
+        &:hover {
+            color: $accent;
+            border-bottom: 2px solid $accent;
+        }
 
-		&.active {
-			color: $primary;
-			border-bottom: 2px solid $primary;
-		}
-	}
+        &.active {
+            color: $primary;
+            border-bottom: 2px solid $primary;
+        }
+    }
 
-	.portifolio-header-social-icons {
+    .portifolio-header-social-icons {
         display: flex;
         gap: 1.5rem;
         margin-top: auto;

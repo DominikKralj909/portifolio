@@ -35,7 +35,7 @@ function Header({ title, subtitle, content }: HeaderProps) {
 			<div className="portifolio-header-content">
 				<h1 className="portifolio-header-title">{title}</h1>
 				<h2 className="portifolio-header-subtitle">{subtitle}</h2>
-				<p>{content}</p>
+				<p className="portifolio-header-content-text">{content}</p>
 			</div>
 			<nav className="portifolio-header-navigation">
 				{navigationLinks.map((link) => (
@@ -44,7 +44,8 @@ function Header({ title, subtitle, content }: HeaderProps) {
 						key={link}
 						onClick={() => handleLinkClick(link)}
 						className={activeLink === link ? 'active' : ''}
-						aria-label={`Go to ${link} section`} 
+						aria-label={`Go to ${link} section`}
+						rel="noopener noreferrer" 
 					>
 						{link}
 					</a>
