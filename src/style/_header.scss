@@ -23,6 +23,7 @@
 		line-height: $line-height-base;
 		color: $text;
 		margin-top: 0.5rem;
+		max-width: 20rem;
 	}
 
     &-content,
@@ -35,7 +36,8 @@
     .portifolio-header-navigation a {
         width: max-content;
         transition: color 0.3s ease;
-		font-size: 1.1rem;
+		font-size: $font-md;
+		min-height: 1.4375rem;
 
         &:hover {
             color: $accent;
