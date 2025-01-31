@@ -5,7 +5,9 @@
     flex: 1 1 0;
 	flex-direction: column;
 	gap: 10rem;
-	overflow: auto;
+	flex: 1;
+    overflow-y: auto;
+    height: 100vh;
 
     &-about {
         display: flex;

@@ -13,13 +13,13 @@ body {
 
 .portifolio-wrapper {
 	display: flex;
-	height: 100%;
-	padding: 5rem; 
+	height: 100vh;
+	overflow: hidden;
+	padding: 5rem;
 }
 
 .portifolio {
 	display: flex;
-	flex: 1;
 	gap: 3rem;
 }
 
