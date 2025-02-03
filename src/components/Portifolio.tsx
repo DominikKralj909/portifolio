@@ -29,7 +29,6 @@ function Portifolio() {
         return () => window.removeEventListener("wheel", handleScroll);
     }, []);
 
-	console.log(contentRef.current)
 	return (
 		<div className="portifolio"  ref={contentRef}>
 			<Header 
@@ -37,7 +36,7 @@ function Portifolio() {
 				subtitle="frontend engineer"
 				content="I build accessible, pixel-perfect digital experiences for the web." 
 			/>
-				<Content />
+			<Content />
 		</div>
 	);
 };
