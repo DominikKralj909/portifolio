@@ -1,34 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
+import { socialLinks } from '../mocks/socialLinks';
 
 interface HeaderProps {
 	title: string;
 	subtitle: string;
 	content: string;
+	currentSection: HTMLElement | null;
 }
-
-const socialLinks = [
-	{
-	  href: "https://github.com/DominikKralj909",
-	  label: "Visit GitHub profile",
-	  iconClass: "fab fa-github",
-	}, {
-	  href: "https://www.linkedin.com/in/dominik-kralj-637568210",
-	  label: "Visit LinkedIn profile",
-	  iconClass: "fab fa-linkedin",
-	}, {
-	  href: "https://www.instagram.com/dominik.kralj/?__pwa=1",
-	  label: "Visit Instagram profile",
-	  iconClass: "fab fa-instagram",
-	},
-];
 
 const navigationLinks = ['about', 'experience', 'projects'];
 
-function Header({ title, subtitle, content }: HeaderProps) {
+function Header({ title, subtitle, content, currentSection }: HeaderProps) {
 	const [activeLink, setActiveLink] = useState('');
-
-
+	
 	const handleLinkClick = (link: string) => setActiveLink(link);
+
+	useEffect(() => {
+		if (currentSection) setActiveLink(currentSection.id.toLowerCase());
+	}, [currentSection]);
 	
 	return (
 		<header className="portifolio-header">
