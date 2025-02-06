@@ -30,4 +30,15 @@
 			}
         }
     }
+
+    &-experience,
+    &-projects {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &-title {
+        margin-bottom: 0.5rem;
+    }
 }

@@ -1,0 +1,57 @@
+@use './theme' as *;
+
+.card {
+    background-color: $surface;
+    border: 2px solid $border;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 20px rgba(0, 209, 255, 0.3);
+    }
+}
+
+.card-header {
+    font-size: $font-sm;
+    color: $muted-text;
+}
+
+.project-icon {
+    width: 4rem;
+    height: 4rem;
+    color: $primary;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: $font-lg;
+    color: $text;
+}
+
+.description {
+    font-size: $font-md;
+    color: $muted-text;
+    margin: 0.5rem 0;
+}
+
+.card-footer {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech-chip {
+    font-size: $font-sm;
+    color: $highlight;
+    font-weight: bold;
+    background-color: rgba(0, 209, 255, 0.2);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
